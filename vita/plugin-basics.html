@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Paddel's Vita Guide</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  <p>
+    Plugins are like small add-ons that run in the background and enhance or add features.  
+
+    How to install a plugin on the Vita:  
+    0. DON'T USE AUTOPLUGIN. YES, THIS ALSO INCLUDES AUTOPLUGIN 2, EASYPLUGIN, OR ANYTHING SIMILAR.  
+    1. Place the plugin file (.s**u**prx or .s**k**prx) in **ur0**:tai/.  
+      -Using **ux0**:tai/config.txt is not recommended, no matter what any readme tells you. In general, it is best to have all plugins in one place.  
+      -You cannot access the ur0: partition via USB, so either just use FTP to transfer the plugin, or place it on the memory card / sd2vita via USB and use Vitashell to move it from there to ur0:tai then.  
+    2. Add a line with the plugin's path to the config.txt in ur0:tai/. Example: `ur0:tai/pluginname.skprx` under the appropriate section.  
+      -In general, .s**k**prx files always go under the `*KERNEL` section and .s**u**prx files usually under either `*main` or `*ALL`. If in doubt, check the plugin readme on github or wherever you got the plugin from.  
+    3. Reboot the Vita to load the plugin.  
+
+    Some plugins may require further setup, but these are the basic steps that are part of every plugin installation and that are enough in 90% of cases. If plugins require further setup, this is usually described in their readme.  
+
+    If you have a plugin causing issues, you can skip the loading of all plugins by holding L during the boot process. You can also skip plugin loading per application by holding L (L1 on PSTV) while opening that application.  
+      -Skipping plugins on boot on a PSTV is a bit more complicated and requires you to have taiHEN 0.12.0 or newer installed (included with the VitaDeploy method). For more info, check <https://forum.devchroma.nl/index.php?topic=334.0>.  
+
+    If you have a config.txt in **ux0**:tai/, the config.txt in **ur0**:tai/ will be ignored, causing plugins that are loaded from that config to not work.  
+  </p>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Paddel's Vita Guide</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  <p>
+    Using Vitashell to connect the Vita to the PC and transfer files:  
+    1. Open Vitashell.  
+    2. Press `Start` to open the settings.  
+      -Set `SELECT button` to either `FTP` or `USB`  
+        While, via FTP, all partitions can be accessed, via USB, only the *contents* of one partition can be accessed.
+      -Set `USB device` to the device you want to use if `USB` was selected above. Usually `sd2vita` or `Memory Card`.  
+      Close the settings.  
+    3. Press select. Depending on your chosen connection methoed, do the following:  
+      **FTP:**  
+      -A window showing the Vita's FTP address will appear in Vitashell.  
+      -The Vita needs to be connected to the same network as your PC.  
+      -On your PC, install any FTP client, such as FileZilla, WinSCP or similar.  
+        You can also type the full `ftp://xxx.xxx.xxx.xxx:yyyy` into Windows Explorer's address bar to connect instead.  
+      -In the FTP client, create a new connection and set the following:  
+        -File protocol: FTP  
+        -IP/Host: the four numbers before the ":" in your Vita's FTP address, for example `192.168.0.1`  
+        -Port: the number after the ":", usually `1337`  
+        -Leave any user/password fields empty, or enable "anonymous login" if available.  
+      -Hit connect and all partitions and contents of your Vita will display in the FTP client.  
+      **USB:**  
+      -Connect the Vita to a computer via the USB cable.  
+        The selected `USB device` from before will appear as a removable drive on your PC.  
+      -Some folders/files will not be visible by default:  
+        In Windows, type `folder options` into the search to open the folder options.  
+        Go to `View`. Under `Advanced settings`, set the following:  
+        -Under `Hidden files and folders`, check `Show hidden files, folders and drives`  
+        -Uncheck `Hide protected operating system files (Recommended)`  
+        -Hit `Apply` and close the window  
+        All files and folders will be visible now.  
+  </p>
+</body>
+
+</html>
