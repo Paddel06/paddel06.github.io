@@ -3,17 +3,21 @@ body {
   color: white;
   text-align: center;
 }
+
 h1 {
   text-decoration: underline;
 }
+
 a:link, a:visited {
   color: blue;
   text-decoration: none;
 }
+
 a:hover {
   color: navy;
   text-decoration: none;
 }
+
 a:active {
   color: red;
   text-decoration: none;
