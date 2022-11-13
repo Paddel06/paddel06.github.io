@@ -4,21 +4,32 @@ body {
   text-align: center;
 }
 
-h1 {
+header {
+  background-color: black;
+  font-family: monospace;
   text-decoration: underline;
+  border-bottom: 1px solid gray;
+  text-align: left;
+}
+header > h1 {
+  margin-left: 16px;
 }
 
-a:link, a:visited {
-  color: blue;
-  text-decoration: none;
+a                 {text-decoration: none;}
+a:link, a:visited {color: blue;}
+a:hover           {color: navy;}
+a:active          {color: red;}
+
+.discordTag {
+  color: gray;
+  font-family: monospace;
 }
 
-a:hover {
-  color: navy;
-  text-decoration: none;
+.thumb-big {
+  width: 480px;
+  height: 272px;
 }
-
-a:active {
-  color: red;
-  text-decoration: none;
+.thumb-small {
+  width: 240px;
+  height: 136px;
 }
