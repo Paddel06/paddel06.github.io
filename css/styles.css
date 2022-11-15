@@ -2,22 +2,54 @@ body {
   background-color: black;
   color: white;
   text-align: center;
+  margin: 0;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: black;
-  font-family: monospace;
-  text-decoration: underline;
+  height: 62px;
   border-bottom: 1px solid gray;
-  text-align: left;
 }
 header h1 {
-  margin-left: 16px;
+  font-family: monospace;
+  text-decoration: underline;
+  margin: 0 24px;
+}
+.langs {
+  display: inline-block;
+  height: 100%;
+  width: 128px;
+}
+.langs:hover {
+  background-color: navy;
+  cursor: pointer;
+}
+
+nav ul {
+  position: fixed;
+  background-color: black;
+  border-right: 1px solid gray;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 100%;
+}
+nav ul li a, .nav-text {
+  display: block;
+  padding: 12px 0;
+}
+nav ul li a:hover {
+  background-color: navy;
+  color: white;
 }
 
 a                 {text-decoration: none;}
-a:link, a:visited {color: blue;}
-a:hover           {color: navy;}
+a:link, a:visited {color: dodgerblue;}
+a:hover           {color: blue;}
 a:active          {color: red;}
 
 .discordTag {
