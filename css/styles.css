@@ -75,3 +75,19 @@ a:active          {color: red;}
   width: 240px;
   max-width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    position: static;
+  }
+  nav ul {
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding: 0;
+  }
+  main {
+    margin: 0 5%;
+  }
+}
