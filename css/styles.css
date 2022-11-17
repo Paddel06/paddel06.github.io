@@ -30,7 +30,7 @@ aside {
   background-color: black;
   width: 200px;
   height: 100%;
-  margin: 62px 0 0 0;
+  padding: 62px 0 0 0;
   overflow: auto;
 }
 nav ul {
@@ -80,7 +80,7 @@ a:active          {color: red;}
     border-right: none;
     border-bottom: 1px solid gray;
     width: 100%;
-    margin: 0;
+    padding: 0;
   }
   main {
     margin: 0 5%;
