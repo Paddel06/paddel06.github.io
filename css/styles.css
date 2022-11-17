@@ -23,17 +23,20 @@ header h1 {
   margin: 0 24px;
 }
 
-nav ul {
+aside {
   position: fixed;
   border-right: 1px solid gray;
   box-sizing: border-box;
   background-color: black;
-  list-style-type: none;
   width: 200px;
   height: 100%;
-  padding: 62px 0 0 0;
-  margin: 0;
+  margin: 62px 0 0 0;
   overflow: auto;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 nav ul li a, .nav-text {
   display: block;
@@ -72,12 +75,12 @@ a:active          {color: red;}
   header {
     position: static;
   }
-  nav ul {
+  aside {
     position: static;
     border-right: none;
     border-bottom: 1px solid gray;
     width: 100%;
-    padding: 0;
+    margin: 0;
   }
   main {
     margin: 0 5%;
