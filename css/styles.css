@@ -87,15 +87,6 @@ a:active          {color: red;}
   font-family: monospace;
 }
 
-.thumb-big {
-  width: 480px;
-  max-width: 100%;
-}
-.thumb-small {
-  width: 240px;
-  max-width: 100%;
-}
-
 @media screen and (max-width: 768px) {
   header {
     position: static;
